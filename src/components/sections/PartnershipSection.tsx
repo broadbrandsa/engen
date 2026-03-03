@@ -4,7 +4,7 @@ export function PartnershipSection() {
   return (
     <section
       className="relative overflow-hidden px-6 py-28 lg:px-10 lg:py-36"
-      style={{ background: "#0e2218" }}
+      style={{ background: "#002c8f" }}
     >
       {/* Watermark */}
       <span
@@ -18,8 +18,8 @@ export function PartnershipSection() {
         {/* Section label */}
         <AnimateIn>
           <p
-            className="mb-5 text-xs font-semibold tracking-[0.28em] uppercase"
-            style={{ fontFamily: "var(--font-jakarta)", color: "#c59a28" }}
+            className="mb-5 text-xs font-bold tracking-[0.28em] uppercase"
+            style={{ fontFamily: "var(--font-jakarta)", color: "#e20613" }}
           >
             Partnership
           </p>
@@ -28,12 +28,12 @@ export function PartnershipSection() {
         {/* Title */}
         <AnimateIn delay={100}>
           <h2
-            className="gold-underline leading-tight"
+            className="gold-underline leading-tight uppercase"
             style={{
               fontFamily: "var(--font-cormorant)",
               fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
-              fontWeight: 400,
-              color: "#f5f1e8",
+              fontWeight: 800,
+              color: "#ffffff",
               letterSpacing: "-0.01em",
             }}
           >
@@ -49,10 +49,10 @@ export function PartnershipSection() {
               className="leading-relaxed"
               style={{
                 fontFamily: "var(--font-cormorant)",
-                fontSize: "clamp(1.2rem, 2.2vw, 1.6rem)",
-                fontWeight: 300,
+                fontSize: "clamp(1.2rem, 2.2vw, 1.65rem)",
+                fontWeight: 600,
                 fontStyle: "italic",
-                color: "rgba(245,241,232,0.88)",
+                color: "rgba(255,255,255,0.9)",
               }}
             >
               CEO, Brandon Meszaros of CXG and Dr Taddy Blecher CEO of Maharishi Institute share a
@@ -62,13 +62,10 @@ export function PartnershipSection() {
               safe environment where students can earn while they are learning.
             </blockquote>
             <figcaption
-              className="mt-5 flex items-center gap-3 text-xs tracking-widest uppercase"
-              style={{ fontFamily: "var(--font-jakarta)", color: "#c59a28" }}
+              className="mt-5 flex items-center gap-3 text-xs tracking-widest uppercase font-bold"
+              style={{ fontFamily: "var(--font-jakarta)", color: "#e20613" }}
             >
-              <span
-                className="inline-block h-px w-6"
-                style={{ background: "#c59a28" }}
-              />
+              <span className="inline-block h-px w-6" style={{ background: "#e20613" }} />
               Brandon Meszaros, CEO — CXG
             </figcaption>
           </figure>
@@ -77,7 +74,7 @@ export function PartnershipSection() {
         {/* Divider */}
         <div
           className="my-12 h-px"
-          style={{ background: "rgba(197,154,40,0.15)" }}
+          style={{ background: "rgba(226,6,19,0.25)" }}
         />
 
         {/* Quote 2 */}
@@ -88,10 +85,10 @@ export function PartnershipSection() {
               className="leading-relaxed"
               style={{
                 fontFamily: "var(--font-cormorant)",
-                fontSize: "clamp(1.2rem, 2.2vw, 1.6rem)",
-                fontWeight: 300,
+                fontSize: "clamp(1.2rem, 2.2vw, 1.65rem)",
+                fontWeight: 600,
                 fontStyle: "italic",
-                color: "rgba(245,241,232,0.88)",
+                color: "rgba(255,255,255,0.9)",
               }}
             >
               Our focus at the Maharishi Institute is to offer an effective learn-and-earn programme
@@ -100,13 +97,10 @@ export function PartnershipSection() {
               play in their own upliftment, families and communities too.
             </blockquote>
             <figcaption
-              className="mt-5 flex items-center gap-3 text-xs tracking-widest uppercase"
-              style={{ fontFamily: "var(--font-jakarta)", color: "#c59a28" }}
+              className="mt-5 flex items-center gap-3 text-xs tracking-widest uppercase font-bold"
+              style={{ fontFamily: "var(--font-jakarta)", color: "#e20613" }}
             >
-              <span
-                className="inline-block h-px w-6"
-                style={{ background: "#c59a28" }}
-              />
+              <span className="inline-block h-px w-6" style={{ background: "#e20613" }} />
               Dr Taddy Blecher, CEO — Maharishi Institute
             </figcaption>
           </figure>
@@ -119,8 +113,8 @@ export function PartnershipSection() {
             style={{
               fontFamily: "var(--font-jakarta)",
               fontSize: "1.0625rem",
-              color: "rgba(245,241,232,0.65)",
-              fontWeight: 300,
+              color: "rgba(255,255,255,0.7)",
+              fontWeight: 400,
             }}
           >
             <p>

@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { Barlow_Condensed, Barlow } from "next/font/google";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
+// Barlow Condensed ≈ Univers LT Std — Engen's official brand typeface.
+// Reusing the same CSS variable names so all section components work unchanged.
+const cormorant = Barlow_Condensed({
   variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
 });
 
-const jakarta = Plus_Jakarta_Sans({
+const jakarta = Barlow({
   variable: "--font-jakarta",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {

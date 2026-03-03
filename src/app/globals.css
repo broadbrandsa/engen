@@ -131,45 +131,46 @@
   }
 }
 
-/* ===== PROPOSAL DESIGN TOKENS ===== */
+/* ===== ENGEN CI DESIGN TOKENS ===== */
+/* Brand: Engen Petroleum — Resolution Blue #002C8F · Brand Red #E20613 */
 
 @theme inline {
-  --color-ink: #0e2218;
-  --color-ink-mid: #1a3d2b;
-  --color-sage: #2a5240;
-  --color-gold: #c59a28;
-  --color-gold-light: #e5bf5c;
-  --color-cream: #f5f1e8;
-  --color-cream-dark: #ebe6d8;
-  --color-text-main: #1c2b25;
-  --color-text-muted: #4a6158;
-  --color-warm-border: #c4b99a;
+  --color-ink: #00113d;
+  --color-ink-mid: #002c8f;
+  --color-sage: #003db0;
+  --color-gold: #e20613;
+  --color-gold-light: #ff4535;
+  --color-cream: #f4f6fa;
+  --color-cream-dark: #e8edf5;
+  --color-text-main: #0d1b45;
+  --color-text-muted: #4d5b82;
+  --color-warm-border: #b8c4e0;
   --font-display: var(--font-cormorant);
   --font-body: var(--font-jakarta);
 }
 
-/* Hero background with diagonal line texture */
+/* Engen-branded hero — deep navy with red glow + subtle diagonal lines */
 .hero-bg {
   background:
     repeating-linear-gradient(
       -55deg,
       transparent,
       transparent 80px,
-      rgba(255, 255, 255, 0.018) 80px,
-      rgba(255, 255, 255, 0.018) 81px
+      rgba(255, 255, 255, 0.015) 80px,
+      rgba(255, 255, 255, 0.015) 81px
     ),
-    radial-gradient(ellipse at 80% 0%, rgba(197, 154, 40, 0.16) 0%, transparent 55%),
-    radial-gradient(ellipse at 0% 100%, rgba(42, 82, 64, 0.4) 0%, transparent 45%),
-    #0e2218;
+    radial-gradient(ellipse at 85% 10%, rgba(226, 6, 19, 0.22) 0%, transparent 50%),
+    radial-gradient(ellipse at 5% 90%, rgba(0, 44, 143, 0.45) 0%, transparent 50%),
+    #00113d;
 }
 
-/* Decorative gold line after section titles */
+/* Engen red underline after section titles */
 .gold-underline::after {
   content: "";
   display: block;
   width: 48px;
-  height: 2px;
-  background: #c59a28;
+  height: 3px;
+  background: #e20613;
   margin-top: 14px;
 }
 
@@ -177,28 +178,29 @@
 .section-num {
   font-family: var(--font-cormorant);
   font-size: clamp(6rem, 16vw, 13rem);
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.07);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.06);
   pointer-events: none;
   user-select: none;
 }
 
 .section-num-dark {
-  -webkit-text-stroke: 1px rgba(14, 34, 24, 0.08);
+  -webkit-text-stroke: 1px rgba(0, 17, 61, 0.07);
 }
 
-/* Large opening quote character */
+/* Large opening quote character — Engen red */
 .quote-mark {
   font-family: var(--font-cormorant);
   font-size: 5.5rem;
   line-height: 0.75;
-  color: #c59a28;
-  font-style: italic;
-  font-weight: 300;
+  color: #e20613;
+  font-style: normal;
+  font-weight: 900;
   display: block;
   margin-bottom: 8px;
+  letter-spacing: -0.05em;
 }
 
 /* ===== HERO ANIMATIONS ===== */
@@ -230,10 +232,16 @@
   }
 }
 
-.hero-badge  { animation: heroFadeIn  0.6s ease 0.25s both; }
+@keyframes ringPulse {
+  0%, 100% { transform: translateY(-50%) scale(1); opacity: 0.12; }
+  50%       { transform: translateY(-50%) scale(1.04); opacity: 0.18; }
+}
+
+.hero-badge    { animation: heroFadeIn  0.6s ease 0.25s both; }
 .hero-headline { animation: heroFadeUp  0.9s ease 0.4s  both; }
-.hero-sub    { animation: heroFadeUp  0.9s ease 0.58s both; }
-.hero-support { animation: heroFadeUp  0.8s ease 0.72s both; }
-.hero-buttons { animation: heroFadeUp  0.8s ease 0.88s both; }
-.hero-scroll  { animation: heroFadeIn  1s   ease 1.25s both; }
-.gold-line   { animation: lineExpand  0.9s ease 0.35s both; }
+.hero-sub      { animation: heroFadeUp  0.9s ease 0.58s both; }
+.hero-support  { animation: heroFadeUp  0.8s ease 0.72s both; }
+.hero-buttons  { animation: heroFadeUp  0.8s ease 0.88s both; }
+.hero-scroll   { animation: heroFadeIn  1s   ease 1.25s both; }
+.gold-line     { animation: lineExpand  0.9s ease 0.35s both; }
+.hero-ring     { animation: ringPulse   6s   ease-in-out infinite; }

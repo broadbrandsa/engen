@@ -53,7 +53,7 @@ export function TrackRecordSection() {
   return (
     <section
       className="relative overflow-hidden px-6 py-28 lg:px-10 lg:py-36"
-      style={{ background: "#0e2218" }}
+      style={{ background: "#00113d" }}
     >
       {/* Watermark */}
       <span
@@ -67,8 +67,8 @@ export function TrackRecordSection() {
         {/* Section label */}
         <AnimateIn>
           <p
-            className="mb-5 text-xs font-semibold tracking-[0.28em] uppercase"
-            style={{ fontFamily: "var(--font-jakarta)", color: "#c59a28" }}
+            className="mb-5 text-xs font-bold tracking-[0.28em] uppercase"
+            style={{ fontFamily: "var(--font-jakarta)", color: "#e20613" }}
           >
             Track Record
           </p>
@@ -78,12 +78,12 @@ export function TrackRecordSection() {
           {/* Title */}
           <AnimateIn delay={100}>
             <h2
-              className="gold-underline leading-tight"
+              className="gold-underline leading-tight uppercase"
               style={{
                 fontFamily: "var(--font-cormorant)",
                 fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
-                fontWeight: 400,
-                color: "#f5f1e8",
+                fontWeight: 800,
+                color: "#ffffff",
                 letterSpacing: "-0.01em",
               }}
             >
@@ -94,20 +94,20 @@ export function TrackRecordSection() {
           {/* Intro badge */}
           <AnimateIn delay={200}>
             <p
-              className="pb-4 text-sm font-medium lg:text-right"
-              style={{ fontFamily: "var(--font-jakarta)", color: "rgba(229,191,92,0.7)" }}
+              className="pb-4 text-sm font-semibold lg:text-right"
+              style={{ fontFamily: "var(--font-jakarta)", color: "rgba(255,255,255,0.45)" }}
             >
               28 years of digital{" "}
-              <span style={{ color: "#e5bf5c" }}>#♥DoingSomethingGreat</span>
+              <span style={{ color: "#e20613" }}>#♥DoingSomethingGreat</span>
             </p>
           </AnimateIn>
         </div>
 
-        {/* Stat callouts */}
+        {/* Stat callouts — Engen blue accent tint */}
         <AnimateIn delay={250}>
           <div
             className="mt-12 mb-14 grid grid-cols-2 gap-px lg:grid-cols-4"
-            style={{ border: "1px solid rgba(197,154,40,0.18)", borderRadius: "2px" }}
+            style={{ border: "1px solid rgba(226,6,19,0.2)", borderRadius: "2px" }}
           >
             {[
               { num: "28", label: "Years of Excellence" },
@@ -118,22 +118,22 @@ export function TrackRecordSection() {
               <div
                 key={stat.num}
                 className="flex flex-col items-center justify-center py-8 px-4 text-center"
-                style={{ background: "rgba(197,154,40,0.05)" }}
+                style={{ background: "rgba(0,44,143,0.15)" }}
               >
                 <span
                   style={{
                     fontFamily: "var(--font-cormorant)",
                     fontSize: "clamp(2rem, 4vw, 3rem)",
-                    fontWeight: 300,
-                    color: "#e5bf5c",
+                    fontWeight: 900,
+                    color: "#e20613",
                     lineHeight: 1,
                   }}
                 >
                   {stat.num}
                 </span>
                 <span
-                  className="mt-2 text-xs tracking-widest uppercase"
-                  style={{ fontFamily: "var(--font-jakarta)", color: "rgba(245,241,232,0.45)" }}
+                  className="mt-2 text-xs tracking-widest uppercase font-semibold"
+                  style={{ fontFamily: "var(--font-jakarta)", color: "rgba(255,255,255,0.4)" }}
                 >
                   {stat.label}
                 </span>
@@ -152,14 +152,14 @@ export function TrackRecordSection() {
                 style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
               >
                 <span
-                  className="w-10 shrink-0 text-xs font-semibold"
-                  style={{ fontFamily: "var(--font-jakarta)", color: "#c59a28" }}
+                  className="w-10 shrink-0 text-xs font-bold"
+                  style={{ fontFamily: "var(--font-jakarta)", color: "#e20613" }}
                 >
                   {award.year}
                 </span>
                 <span
                   className="text-sm leading-snug"
-                  style={{ fontFamily: "var(--font-jakarta)", color: "rgba(245,241,232,0.72)" }}
+                  style={{ fontFamily: "var(--font-jakarta)", color: "rgba(255,255,255,0.65)" }}
                 >
                   {award.name}
                 </span>

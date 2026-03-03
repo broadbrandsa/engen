@@ -1,23 +1,52 @@
 export function HeroSection() {
   return (
     <section className="hero-bg relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 py-32 text-center lg:px-10">
+
+      {/* Engen-branded decorative ring — echoes the logo's circular element */}
+      <div
+        className="hero-ring pointer-events-none absolute right-0 top-1/2 hidden lg:block"
+        style={{
+          width: "680px",
+          height: "680px",
+          borderRadius: "50%",
+          border: "72px solid rgba(226, 6, 19, 0.13)",
+          transform: "translateY(-50%)",
+          right: "-220px",
+        }}
+        aria-hidden="true"
+      />
+      {/* Second, smaller inner ring */}
+      <div
+        className="pointer-events-none absolute right-0 top-1/2 hidden lg:block"
+        style={{
+          width: "480px",
+          height: "480px",
+          borderRadius: "50%",
+          border: "2px solid rgba(226, 6, 19, 0.18)",
+          transform: "translateY(-50%)",
+          right: "-80px",
+          opacity: 0.5,
+        }}
+        aria-hidden="true"
+      />
+
       {/* Top metadata badge */}
       <div className="hero-badge absolute top-24 left-1/2 -translate-x-1/2">
         <span
           className="inline-flex items-center gap-3 text-xs tracking-[0.2em] uppercase"
           style={{
             fontFamily: "var(--font-jakarta)",
-            color: "rgba(229, 191, 92, 0.7)",
+            color: "rgba(255,255,255,0.45)",
           }}
         >
           <span
-            className="h-px w-8 gold-line inline-block"
-            style={{ background: "rgba(197,154,40,0.5)" }}
+            className="h-px w-8 inline-block"
+            style={{ background: "rgba(226,6,19,0.55)" }}
           />
           Engen · 25 February 2026
           <span
             className="h-px w-8 inline-block"
-            style={{ background: "rgba(197,154,40,0.5)" }}
+            style={{ background: "rgba(226,6,19,0.55)" }}
           />
         </span>
       </div>
@@ -32,41 +61,39 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-5xl">
-        {/* Overline */}
+        {/* Overline — Engen red */}
         <p
-          className="hero-badge mb-6 text-xs font-semibold tracking-[0.3em] uppercase"
+          className="hero-badge mb-4 text-xs font-bold tracking-[0.35em] uppercase"
           style={{
             fontFamily: "var(--font-jakarta)",
-            color: "#c59a28",
+            color: "#e20613",
           }}
         >
           Unified Communication
         </p>
 
-        {/* Gold divider line */}
+        {/* Red accent line */}
         <div
-          className="gold-line mx-auto mb-10 h-px w-16"
-          style={{ background: "#c59a28", transformOrigin: "center" }}
+          className="gold-line mx-auto mb-10 h-[3px] w-16"
+          style={{ background: "#e20613", transformOrigin: "center" }}
         />
 
-        {/* Main headline */}
+        {/* Main headline — Barlow Condensed, ultra-bold, Engen-style */}
         <h1
-          className="hero-headline font-display leading-[1.05] tracking-tight"
+          className="hero-headline leading-[1.0] tracking-tight uppercase"
           style={{
             fontFamily: "var(--font-cormorant)",
-            fontSize: "clamp(2.8rem, 7vw, 6.5rem)",
-            fontWeight: 300,
-            color: "#f5f1e8",
+            fontSize: "clamp(3rem, 8vw, 7rem)",
+            fontWeight: 900,
+            color: "#ffffff",
             letterSpacing: "-0.01em",
           }}
         >
           Integrated Experiences
           <br />
-          <em style={{ color: "#e5bf5c", fontStyle: "italic" }}>
-            &amp; Loyalty Programme
-          </em>
+          <span style={{ color: "#e20613" }}>&amp; Loyalty</span>
           <br />
-          Proposal
+          Programme Proposal
         </h1>
 
         {/* Subheadline */}
@@ -74,9 +101,9 @@ export function HeroSection() {
           className="hero-sub mx-auto mt-8 max-w-2xl leading-relaxed"
           style={{
             fontFamily: "var(--font-jakarta)",
-            fontSize: "clamp(1rem, 2vw, 1.2rem)",
-            color: "rgba(245, 241, 232, 0.65)",
-            fontWeight: 300,
+            fontSize: "clamp(1rem, 1.8vw, 1.15rem)",
+            color: "rgba(255,255,255,0.6)",
+            fontWeight: 400,
           }}
         >
           A fully managed, omni-channel customer engagement platform and contact
@@ -88,24 +115,25 @@ export function HeroSection() {
           className="hero-support mt-3"
           style={{
             fontFamily: "var(--font-jakarta)",
-            fontSize: "0.8rem",
-            color: "rgba(197, 154, 40, 0.6)",
-            letterSpacing: "0.08em",
+            fontSize: "0.75rem",
+            color: "rgba(226,6,19,0.65)",
+            letterSpacing: "0.12em",
             textTransform: "uppercase",
+            fontWeight: 600,
           }}
         >
           Engen Unified Communication as a Service.
         </p>
 
-        {/* CTA buttons */}
+        {/* CTA buttons — Engen red primary, white outline secondary */}
         <div className="hero-buttons mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
             href="#proposal"
-            className="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:opacity-90 active:scale-[0.98]"
+            className="inline-flex items-center gap-2 px-9 py-3.5 text-sm font-bold tracking-[0.12em] uppercase transition-all duration-300 hover:opacity-90 active:scale-[0.98]"
             style={{
               fontFamily: "var(--font-jakarta)",
-              background: "#c59a28",
-              color: "#0e2218",
+              background: "#e20613",
+              color: "#ffffff",
               borderRadius: "2px",
             }}
           >
@@ -113,11 +141,11 @@ export function HeroSection() {
           </a>
           <a
             href="#"
-            className="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:bg-white/10"
+            className="inline-flex items-center gap-2 px-9 py-3.5 text-sm font-semibold tracking-[0.12em] uppercase transition-all duration-300 hover:bg-white/10"
             style={{
               fontFamily: "var(--font-jakarta)",
-              color: "rgba(245, 241, 232, 0.75)",
-              border: "1px solid rgba(245, 241, 232, 0.25)",
+              color: "rgba(255,255,255,0.8)",
+              border: "1px solid rgba(255,255,255,0.3)",
               borderRadius: "2px",
             }}
           >
@@ -129,17 +157,17 @@ export function HeroSection() {
       {/* Scroll indicator */}
       <div
         className="hero-scroll absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-        style={{ color: "rgba(197, 154, 40, 0.5)" }}
+        style={{ color: "rgba(226,6,19,0.5)" }}
       >
         <span
-          className="text-[10px] tracking-[0.25em] uppercase"
+          className="text-[10px] tracking-[0.25em] uppercase font-semibold"
           style={{ fontFamily: "var(--font-jakarta)" }}
         >
           Scroll
         </span>
         <div
           className="h-8 w-px"
-          style={{ background: "rgba(197, 154, 40, 0.35)" }}
+          style={{ background: "rgba(226,6,19,0.4)" }}
         />
       </div>
     </section>

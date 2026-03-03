@@ -13,7 +13,7 @@ export function DoingSomethingGreatSection() {
   return (
     <section
       className="relative overflow-hidden px-6 py-28 lg:px-10 lg:py-36"
-      style={{ background: "#f5f1e8" }}
+      style={{ background: "#f4f6fa" }}
     >
       {/* Watermark */}
       <span
@@ -27,8 +27,8 @@ export function DoingSomethingGreatSection() {
         {/* Section label */}
         <AnimateIn>
           <p
-            className="mb-5 text-xs font-semibold tracking-[0.28em] uppercase"
-            style={{ fontFamily: "var(--font-jakarta)", color: "#c59a28" }}
+            className="mb-5 text-xs font-bold tracking-[0.28em] uppercase"
+            style={{ fontFamily: "var(--font-jakarta)", color: "#e20613" }}
           >
             Our Story
           </p>
@@ -37,12 +37,12 @@ export function DoingSomethingGreatSection() {
         {/* Title */}
         <AnimateIn delay={100}>
           <h2
-            className="gold-underline leading-tight"
+            className="gold-underline leading-tight uppercase"
             style={{
               fontFamily: "var(--font-cormorant)",
               fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
-              fontWeight: 400,
-              color: "#0e2218",
+              fontWeight: 800,
+              color: "#00113d",
               letterSpacing: "-0.01em",
             }}
           >
@@ -57,8 +57,8 @@ export function DoingSomethingGreatSection() {
             style={{
               fontFamily: "var(--font-jakarta)",
               fontSize: "1.0625rem",
-              color: "#2d3d38",
-              fontWeight: 300,
+              color: "#1e2d5c",
+              fontWeight: 400,
             }}
           >
             <p>
@@ -76,24 +76,24 @@ export function DoingSomethingGreatSection() {
 
         {/* Bullets */}
         <AnimateIn delay={280}>
-          <ul className="mt-8 space-y-3">
+          <ul className="mt-8 space-y-2">
             {bullets.map((bullet, i) => (
               <li
                 key={i}
                 className="flex items-start gap-4 py-3 px-5"
                 style={{
-                  background: i % 2 === 0 ? "rgba(14,34,24,0.03)" : "transparent",
-                  borderLeft: "2px solid rgba(197,154,40,0.35)",
+                  background: i % 2 === 0 ? "rgba(0,44,143,0.05)" : "transparent",
+                  borderLeft: "3px solid rgba(226,6,19,0.4)",
                   fontFamily: "var(--font-jakarta)",
                   fontSize: "0.9375rem",
-                  color: "#2d3d38",
-                  fontWeight: 300,
+                  color: "#1e2d5c",
+                  fontWeight: 400,
                   lineHeight: 1.7,
                 }}
               >
                 <span
-                  className="mt-0.5 shrink-0 text-sm font-bold"
-                  style={{ color: "#c59a28" }}
+                  className="mt-0.5 shrink-0 text-sm font-black"
+                  style={{ color: "#e20613" }}
                 >
                   ¾
                 </span>
@@ -110,8 +110,8 @@ export function DoingSomethingGreatSection() {
             style={{
               fontFamily: "var(--font-jakarta)",
               fontSize: "1.0625rem",
-              color: "#2d3d38",
-              fontWeight: 300,
+              color: "#1e2d5c",
+              fontWeight: 400,
             }}
           >
             <p>
@@ -132,13 +132,14 @@ export function DoingSomethingGreatSection() {
           </div>
         </AnimateIn>
 
-        {/* Quote block */}
+        {/* Quote block — Engen navy */}
         <AnimateIn delay={420}>
           <figure
             className="mt-14 px-8 py-8"
             style={{
-              background: "#0e2218",
+              background: "#00113d",
               borderRadius: "2px",
+              borderTop: "4px solid #e20613",
             }}
           >
             <span className="quote-mark">&ldquo;</span>
@@ -147,9 +148,9 @@ export function DoingSomethingGreatSection() {
               style={{
                 fontFamily: "var(--font-cormorant)",
                 fontSize: "clamp(1.2rem, 2.2vw, 1.6rem)",
-                fontWeight: 300,
+                fontWeight: 600,
                 fontStyle: "italic",
-                color: "rgba(245,241,232,0.85)",
+                color: "rgba(255,255,255,0.88)",
               }}
             >
               When delivering the annual Nelson Mandela lecture at the University of Pretoria in July,
@@ -159,8 +160,8 @@ export function DoingSomethingGreatSection() {
               innovators that will change the face of Africa&apos;s future.
             </blockquote>
             <figcaption
-              className="mt-5 text-xs tracking-widest uppercase"
-              style={{ fontFamily: "var(--font-jakarta)", color: "#c59a28" }}
+              className="mt-5 text-xs tracking-widest uppercase font-bold"
+              style={{ fontFamily: "var(--font-jakarta)", color: "#e20613" }}
             >
               Bill Gates — Annual Nelson Mandela Lecture, University of Pretoria
             </figcaption>

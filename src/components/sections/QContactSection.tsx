@@ -31,7 +31,7 @@ export function QContactSection() {
   return (
     <section
       className="relative overflow-hidden px-6 py-28 lg:px-10 lg:py-36"
-      style={{ background: "#f5f1e8" }}
+      style={{ background: "#f4f6fa" }}
     >
       {/* Watermark */}
       <span
@@ -45,8 +45,8 @@ export function QContactSection() {
         {/* Section label */}
         <AnimateIn>
           <p
-            className="mb-5 text-xs font-semibold tracking-[0.28em] uppercase"
-            style={{ fontFamily: "var(--font-jakarta)", color: "#c59a28" }}
+            className="mb-5 text-xs font-bold tracking-[0.28em] uppercase"
+            style={{ fontFamily: "var(--font-jakarta)", color: "#e20613" }}
           >
             QContact Platform
           </p>
@@ -55,12 +55,12 @@ export function QContactSection() {
         {/* Title */}
         <AnimateIn delay={100}>
           <h2
-            className="gold-underline max-w-3xl leading-tight"
+            className="gold-underline max-w-3xl leading-tight uppercase"
             style={{
               fontFamily: "var(--font-cormorant)",
               fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
-              fontWeight: 400,
-              color: "#0e2218",
+              fontWeight: 800,
+              color: "#00113d",
               letterSpacing: "-0.01em",
             }}
           >
@@ -75,8 +75,8 @@ export function QContactSection() {
             style={{
               fontFamily: "var(--font-jakarta)",
               fontSize: "1.0625rem",
-              color: "#2d3d38",
-              fontWeight: 300,
+              color: "#1e2d5c",
+              fontWeight: 400,
             }}
           >
             <p>
@@ -93,31 +93,32 @@ export function QContactSection() {
           </div>
         </AnimateIn>
 
-        {/* Highlight cards */}
+        {/* Highlight cards — Engen navy with red top border */}
         <div className="mt-16 grid gap-px sm:grid-cols-2 lg:grid-cols-4">
           {highlights.map((item, i) => (
             <AnimateIn key={item.title} delay={280 + i * 80}>
               <div
                 className="group flex h-full flex-col p-8 transition-all duration-300 hover:-translate-y-1"
                 style={{
-                  background: "#0e2218",
-                  borderTop: "2px solid #c59a28",
+                  background: "#00113d",
+                  borderTop: "3px solid #e20613",
                 }}
               >
                 <span
-                  className="mb-5 text-2xl"
-                  style={{ color: "#c59a28", lineHeight: 1 }}
+                  className="mb-5 text-2xl font-black"
+                  style={{ color: "#e20613", lineHeight: 1 }}
                   aria-hidden="true"
                 >
                   {item.icon}
                 </span>
                 <h3
-                  className="mb-3"
+                  className="mb-3 uppercase"
                   style={{
                     fontFamily: "var(--font-cormorant)",
                     fontSize: "1.5rem",
-                    fontWeight: 500,
-                    color: "#f5f1e8",
+                    fontWeight: 800,
+                    color: "#ffffff",
+                    letterSpacing: "0.02em",
                   }}
                 >
                   {item.title}
@@ -127,8 +128,8 @@ export function QContactSection() {
                   style={{
                     fontFamily: "var(--font-jakarta)",
                     fontSize: "0.875rem",
-                    color: "rgba(245,241,232,0.6)",
-                    fontWeight: 300,
+                    color: "rgba(255,255,255,0.6)",
+                    fontWeight: 400,
                   }}
                 >
                   {item.description}

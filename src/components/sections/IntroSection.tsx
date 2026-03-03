@@ -5,7 +5,7 @@ export function IntroSection() {
     <section
       id="proposal"
       className="relative overflow-hidden px-6 py-28 lg:px-10 lg:py-36"
-      style={{ background: "#f5f1e8" }}
+      style={{ background: "#f4f6fa" }}
     >
       {/* Watermark */}
       <span
@@ -19,8 +19,8 @@ export function IntroSection() {
         {/* Section label */}
         <AnimateIn>
           <p
-            className="mb-5 text-xs font-semibold tracking-[0.28em] uppercase"
-            style={{ fontFamily: "var(--font-jakarta)", color: "#c59a28" }}
+            className="mb-5 text-xs font-bold tracking-[0.28em] uppercase"
+            style={{ fontFamily: "var(--font-jakarta)", color: "#e20613" }}
           >
             Introduction
           </p>
@@ -29,12 +29,12 @@ export function IntroSection() {
         {/* Title */}
         <AnimateIn delay={100}>
           <h2
-            className="gold-underline leading-tight"
+            className="gold-underline leading-tight uppercase"
             style={{
               fontFamily: "var(--font-cormorant)",
               fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
-              fontWeight: 400,
-              color: "#0e2218",
+              fontWeight: 800,
+              color: "#00113d",
               letterSpacing: "-0.01em",
             }}
           >
@@ -49,8 +49,8 @@ export function IntroSection() {
             style={{
               fontFamily: "var(--font-jakarta)",
               fontSize: "1.0625rem",
-              color: "#2d3d38",
-              fontWeight: 300,
+              color: "#1e2d5c",
+              fontWeight: 400,
             }}
           >
             <p>
@@ -103,23 +103,22 @@ export function IntroSection() {
           </div>
         </AnimateIn>
 
-        {/* Callout block */}
+        {/* Callout block — Engen blue left border */}
         <AnimateIn delay={300}>
           <div
             className="mt-14 border-l-4 py-6 pl-8"
             style={{
-              borderColor: "#c59a28",
-              background: "rgba(197,154,40,0.06)",
+              borderColor: "#e20613",
+              background: "rgba(226,6,19,0.04)",
             }}
           >
             <p
-              className="leading-snug"
+              className="font-bold leading-snug uppercase"
               style={{
                 fontFamily: "var(--font-cormorant)",
-                fontSize: "clamp(1.35rem, 2.5vw, 1.75rem)",
-                fontWeight: 500,
-                color: "#0e2218",
-                fontStyle: "italic",
+                fontSize: "clamp(1.35rem, 2.5vw, 1.8rem)",
+                color: "#00113d",
+                letterSpacing: "0.01em",
               }}
             >
               This document sets out our QContact proposal for Engen consideration.
